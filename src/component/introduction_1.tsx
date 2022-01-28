@@ -7,6 +7,10 @@ type Props = {
   className: string;
 };
 
+type PageCountProps = {
+  pageCount: () => void;
+}
+
 const Title: React.FC<Props> = (props) => {
   return (
     <svg
@@ -41,7 +45,7 @@ const Title: React.FC<Props> = (props) => {
   );
 };
 
-const Introduction_1: React.FC = () => {
+const Introduction_1: React.FC<PageCountProps> = (pageCount) => {
   return (
     <div className={style.wrapper}>
       <h3 className={`${style.rubrikNew} ${style.groupName}`}>
