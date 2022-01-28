@@ -1,0 +1,64 @@
+.yu-gothic {
+    font-family: yu-gothic-pr6n,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubrik-new {
+  font-family: rubrik-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1vw;
+}
+
+.content {
+  width: 100%;
+}
+
+.logo {
+  width: 30vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.title {
+    display: block;
+    width: 30em;
+  margin: 1% auto 0 auto ;
+}
+
+.credit {
+  text-align: center;
+  font-size: 0.5em;
+  margin-top: 7%;
+  margin-bottom: 3%;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+}
+
+.group-name {
+    position: absolute;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1em;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    bottom: 7em;
+    left: 5em;
+    
+}
+
+.button {
+  position: absolute;
+  right: 8em;
+  bottom: 7em;
+  width: 5.93em;
+}

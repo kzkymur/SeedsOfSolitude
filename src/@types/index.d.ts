@@ -13,3 +13,7 @@ declare module '*.scss' {
   const classNames: IClassNames;
   export = classNames;
 }
+
+declare module '*.svg' {
+  export = string;
+}

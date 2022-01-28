@@ -1,11 +1,11 @@
 import React from 'react';
 import style from '@/style/Home.scss';
+import Introduction_1 from './introduction_1';
 
 const Home: React.FC = () => {
-	const title: string = "孤独の種"
 	return (
      <>
-	 	<h1>{title}</h1>
+	 	<Introduction_1 />
 	 </>
 	);
 }
