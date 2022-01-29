@@ -3,15 +3,18 @@ import style from "@/style/introduction_1.scss";
 import Logo from "./logo";
 import Button from "./button";
 
-type Props = {
+type styleProps = {
   className: string;
 };
 
-type PageCountProps = {
-  pageCount: () => void;
+interface Props {
+  countPage: VoidFunction;
+  pageNumber: number;
 }
 
-const Title: React.FC<Props> = (props) => {
+
+
+const Title: React.FC<styleProps> = (props) => {
   return (
     <svg
       className={props.className}
@@ -45,7 +48,7 @@ const Title: React.FC<Props> = (props) => {
   );
 };
 
-const Introduction_1: React.FC<PageCountProps> = (pageCount) => {
+const Introduction_1: React.FC<Props> = (props) => {
   return (
     <div className={style.wrapper}>
       <h3 className={`${style.rubrikNew} ${style.groupName}`}>
@@ -61,7 +64,7 @@ const Introduction_1: React.FC<PageCountProps> = (pageCount) => {
           Shun Sasaguri / Takumi Yokoyama / Kazuki Yamaura
         </h3>
       </div>
-      <Button className={style.button} />
+      <Button className={style.button} countPage={props.countPage}/>
     </div>
   );
 };

@@ -3,11 +3,28 @@ import style from "@/style/button.scss";
 
 type Props = {
   className: string;
+  countPage: VoidFunction;
 };
 
-const ButtonCircleSvg: React.FC = () => {
+type CircleProps = {
+  countPage: VoidFunction;
+}
+
+const Button: React.FC<Props> = (props) => {
+  const button_name: string = "START";
+  const color_name: string = "red";
+  return (
+    <div className={props.className}>
+      <p className={`${style.buttonName} ${style.rubrikNew}`}>{button_name}</p>
+      <ButtonCircleSvg countPage={props.countPage}/>
+    </div>
+  );
+};
+
+const ButtonCircleSvg: React.FC<CircleProps> = (props) => {
   return (
     <svg
+      onClick = {props.countPage}
       className={style.button}
       viewBox="0 0 87 88"
       fill="none"
@@ -23,20 +40,9 @@ const ButtonCircleSvg: React.FC = () => {
         className={style.buttonArrow}
         d="M40.3525 36.8182L48.4461 45.3466L40.3525 53.875"
         stroke="black"
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
     </svg>
-  );
-};
-
-const Button: React.FC<Props> = (props) => {
-  const button_name: string = "START";
-  const color_name: string = "red";
-  return (
-    <div className={props.className}>
-      <p className={`${style.buttonName} ${style.rubrikNew}`}>{button_name}</p>
-      <ButtonCircleSvg />
-    </div>
   );
 };
 
