@@ -1,0 +1,32 @@
+.yu-gothic {
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubrik-new {
+  font-family: rubrik-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubrik-new-lite {
+    font-family: rubrik-new, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.wrapper {
+    font-size: 1vw;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title {
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+}

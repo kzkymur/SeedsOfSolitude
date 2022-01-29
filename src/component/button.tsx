@@ -4,6 +4,7 @@ import style from "@/style/button.scss";
 type Props = {
   className: string;
   countPage: VoidFunction;
+  pageNumber: number;
 };
 
 type CircleProps = {
@@ -11,7 +12,7 @@ type CircleProps = {
 }
 
 const Button: React.FC<Props> = (props) => {
-  const button_name: string = "START";
+  const button_name: string = props.pageNumber == 1 ? "START" : "NEXT";
   const color_name: string = "red";
   return (
     <div className={props.className}>

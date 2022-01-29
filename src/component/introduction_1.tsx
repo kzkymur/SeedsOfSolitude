@@ -12,6 +12,21 @@ interface Props {
   pageNumber: number;
 }
 
+const Introduction_1: React.FC<Props> = (props) => {
+  return (
+    <div className={style.wrapper}>
+      <h3 className={`${style.rubrikNew} ${style.seminarName} ${props.pageNumber == 1 ? "" : style.nonSeminarName}`}>
+        HYBRID ART PRACTICE 2022
+      </h3>
+      <Logo className={`${style.logo} ${props.pageNumber == 1 ? "" : style.headerLogo}`} />
+      <Title className={`${style.title} ${props.pageNumber == 1 ? "" : style.headerTitle}`} />
+      <h3 className={`${style.rubrikNew} ${style.credit} ${props.pageNumber == 1 ? "" : style.nonCredit}`}>
+        Konosuke Hirato / Makoto Tanikubo / Yo Tanaka<br />Shun Sasaguri / Takumi Yokoyama / Kazuki Yamaura
+      </h3>
+      <Button className={style.button} countPage={props.countPage}  pageNumber={props.pageNumber} />
+    </div>
+  );
+};
 
 
 const Title: React.FC<styleProps> = (props) => {
@@ -45,27 +60,6 @@ const Title: React.FC<styleProps> = (props) => {
         </g>
       </g>
     </svg>
-  );
-};
-
-const Introduction_1: React.FC<Props> = (props) => {
-  return (
-    <div className={style.wrapper}>
-      <h3 className={`${style.rubrikNew} ${style.groupName}`}>
-        HYBRID ART PRACTICE 2022
-      </h3>
-      <div className={style.content}>
-        <Logo className={style.logo} />
-        <Title className={style.title} />
-
-        <h3 className={`${style.rubrikNew} ${style.credit}`}>
-          Konosuke Hirato / Makoto Tanikubo / Yo Tanaka
-          <br />
-          Shun Sasaguri / Takumi Yokoyama / Kazuki Yamaura
-        </h3>
-      </div>
-      <Button className={style.button} countPage={props.countPage}/>
-    </div>
   );
 };
 

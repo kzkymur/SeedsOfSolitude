@@ -1,7 +1,7 @@
 .yu-gothic {
-    font-family: yu-gothic-pr6n,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .rubrik-new {
@@ -11,54 +11,97 @@
 }
 
 .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
   font-size: 1vw;
-}
-
-.content {
-  width: 100%;
+  width: 100vw;
+  position: fixed;
 }
 
 .logo {
-  width: 30vw;
-  margin: 0 auto;
+  height: 60vh;
+  top: 7vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
   display: block;
 }
 
 .title {
-    display: block;
-    width: 30em;
-  margin: 1% auto 0 auto ;
+  position: absolute;
+  display: block;
+  top: 68vh;
+  height: 8vh;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .credit {
   text-align: center;
   font-size: 0.5em;
-  margin-top: 7%;
-  margin-bottom: 3%;
+  margin: 90vh auto 0 50vw;
+  transform: translate(-50%, 0);
   letter-spacing: 0.5em;
   text-indent: 0.5em;
+  white-space: nowrap;
 }
 
-.group-name {
-    position: absolute;
-    text-align: left;
-    font-size: 0.8em;
-    line-height: 1em;
-    letter-spacing: 0.4em;
-    text-indent: 0.4em;
-    bottom: 7em;
-    left: 5em;
-    
+.seminar-name {
+  position: absolute;
+  font-size: 0.8em;
+  line-height: 1em;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+  bottom: 7em;
+  left: 5em;
 }
 
 .button {
   position: absolute;
   right: 8em;
-  bottom: 7em;
+  bottom: 4em;
   width: 5.93em;
+}
+
+.header-content {
+  opacity: 1;
+}
+
+.header-logo {
+  transition: 1s;
+  height: 3em;
+  top: 5em;
+  left: 4em;
+  transform: translate(0, 0);
+}
+
+.header-title {
+  transition: 1s;
+  height: 2em;
+  top: 5.5em;
+  left:7.5em;
+  transform: translate(0, 0);
+}
+
+.non-credit {
+  animation: show 1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+.non-seminar-name {
+  animation: show 1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+    display: inline;
+  }
+  99% {
+    opacity: 0;
+    display: inline;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
