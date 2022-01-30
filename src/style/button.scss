@@ -4,7 +4,7 @@
 
 .button-circle {
   width: 100%;
-  transition: 0.2s;
+  transition: 0.3s;
   &:hover {
     fill: black;
     ~ .button-arrow {
@@ -13,8 +13,22 @@
   }
 }
 
+.button-color-change{
+  stroke: white;
+  fill: black;
+  ~ .button-arrow {
+    stroke: white;
+  }
+  &:hover {
+    fill: white;
+    ~ .button-arrow {
+      stroke: black;
+    }
+  }
+}
+
 .button-arrow {
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .button-name {
@@ -23,6 +37,11 @@
   letter-spacing: 0.2em;
   text-indent: 0.2em;
   margin-bottom: 8%;
+  color: black;
+}
+
+.button-name-color-change{
+  color: white;
 }
 
 .rubrik-new {

@@ -73,6 +73,11 @@
   transform: translate(0, 0);
 }
 
+.header-logo-center {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .header-title {
   transition: 1s;
   height: 2em;
@@ -82,16 +87,16 @@
 }
 
 .non-credit {
-  animation: show 1s linear 0s;
+  animation: hide 1s linear 0s;
   animation-fill-mode: forwards;
 }
 
 .non-seminar-name {
-  animation: show 1s linear 0s;
+  animation: hide 1s linear 0s;
   animation-fill-mode: forwards;
 }
 
-@keyframes show {
+@keyframes hide {
   0% {
     opacity: 1;
     display: inline;

@@ -11,22 +11,84 @@
 }
 
 .rubrik-new-lite {
-    font-family: rubrik-new, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
+  font-family: rubrik-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
 
 .wrapper {
-    font-size: 1vw;
+  font-size: 1vw;
   display: flex;
+  flex-flow: column;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
-
 }
 
 .title {
   letter-spacing: 0.5em;
   text-indent: 0.5em;
+  transition: 1s;
+}
+
+.title-small {
+    font-size: 0.1em;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    font-weight: 400;
+    color: white;
+  }
+
+.hide-jp {
+  height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: 1s;
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+  line-height: 2.3em;
+  width: 40em;
+  font-feature-settings: "palt";
+  color: white;
+}
+
+.hide-en {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+  font-size: 0.8em;
+  letter-spacing: 0.5em;
+  width: 65em;
+  font-weight: 200;
+  line-height: 2em;
+  color: white;
+}
+
+.statement-ja {
+  height: 12em;
+  margin-top: 4em;
+  display: inline;
+  animation: overflowchange 1.1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+.statement-en {
+  height: 10em;
+  margin-top: 4em;
+  display: inline;
+  animation: overflowchange 1.1s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overflowchange {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: inherit;
+  }
 }
