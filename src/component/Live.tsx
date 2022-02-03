@@ -5,10 +5,6 @@ import Hamburger from "./Hamburger";
 import Menu from "./Menu";
 import Logo from "./Logo_svg";
 
-type styleProps = {
-  className: string;
-};
-
 const Live: React.FC = () => {
   const [checked, setChecked] = useState<boolean>(false);
 
@@ -21,16 +17,12 @@ const Live: React.FC = () => {
       <Menu className={`${style.menu} ${checked ? style.menuShow : ""}`}/>
       <iframe
         className={style.iframe}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/tEGMFkkX4B4?autoplay=1&loop=1&mute=1"
+        src="https://youtu.be/GVaLs79zT1k?autoplay=1"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="../jquery.mb.YTPlayer.min.js"></script>
     </div>
   );
 };

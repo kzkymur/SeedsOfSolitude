@@ -5,7 +5,6 @@ export const wrapper: string;
 export const title: string;
 export const titleSmall: string;
 export const hideJp: string;
-export const hideEn: string;
 export const statementJa: string;
 export const overflowchange: string;
-export const statementEn: string;
+export const titleHide: string;

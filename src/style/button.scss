@@ -13,20 +13,6 @@
   }
 }
 
-.button-color-change{
-  stroke: white;
-  fill: black;
-  ~ .button-arrow {
-    stroke: white;
-  }
-  &:hover {
-    fill: white;
-    ~ .button-arrow {
-      stroke: black;
-    }
-  }
-}
-
 .button-arrow {
   transition: 0.3s;
 }
@@ -40,12 +26,50 @@
   color: black;
 }
 
-.button-name-color-change{
+.white {
+  opacity: 0;
+  .button-circle {
+    opacity: 0;
+  }
+
+  .button-arrow {
+    opacity: 0;
+  }
+}
+
+.black {
   color: white;
+   .button-circle {
+    fill: transparent;
+    stroke: white;
+    &:hover {
+      fill: white;
+       ~ .button-arrow {
+        stroke: black;
+      }
+    }
+  }
+
+  .button-arrow {
+    stroke: white;
+  }
 }
 
 .rubrik-new {
   font-family: rubrik-new, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (max-width: 959px) {
+  .button-circle {
+    width: 100%;
+    transition: 0.3s;
+    &:hover {
+      fill: white;
+      ~ .button-arrow {
+        stroke: black;
+      }
+    }
+  }
 }

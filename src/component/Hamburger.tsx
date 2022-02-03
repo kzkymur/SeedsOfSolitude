@@ -11,7 +11,7 @@ const Hamburger: React.FC<Props> = (props) => {
   return (
     <div
       onClick={() => props.setChecked(!props.checked)}
-      className={`${style.hamburgerContent} ${
+      className={`${props.className} ${style.hamburgerContent} ${
         props.checked ? style.changeShape : ""
       }`}
     >

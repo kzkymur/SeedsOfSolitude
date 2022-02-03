@@ -1,6 +1,6 @@
 .menu {
   transition: 0.8s;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   height: 100vh;
   width: 35vw;
   display: flex;
@@ -34,5 +34,43 @@
   }
   &:hover {
     border-left: 0.2em solid #000;
+  }
+}
+
+.dont-touch{
+  color: #aaa;
+  &:hover{
+    border: none;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .link{
+    margin-left: 1rem;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    ~ .twitter{
+      &:link,
+      &:visited {
+        color: #00acee;
+      }
+      color: #00acee;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .link{
+  margin: 2rem 0 2rem 1rem;
+  font-size: 3em;
+  letter-spacing: 0.4em;
+    ~ .twitter{
+      font-size: 2em;
+    }
+  }
+  .menu{
+    width: 45vw;
   }
 }

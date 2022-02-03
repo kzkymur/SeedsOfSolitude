@@ -18,12 +18,12 @@ const Introduction_1: React.FC<Props> = (props) => {
       <h3 className={`${style.rubrikNew} ${style.seminarName} ${props.pageNumber == 1 ? "" : style.nonSeminarName}`}>
         HYBRID ART PRACTICE 2022
       </h3>
-      <Logo className={`${style.logo} ${props.pageNumber == 1 ? "" : style.headerLogo} ${props.pageNumber == 3 ? style.headerLogoCenter : ""}`} />
+      <Logo className={`${style.logo} ${props.pageNumber == 1 ? "" : style.headerLogo}`} />
       <Title className={`${style.title} ${props.pageNumber == 1 ? "" : style.headerTitle}`} />
       <h3 className={`${style.rubrikNew} ${style.credit} ${props.pageNumber == 1 ? "" : style.nonCredit}`}>
         Konosuke Hirato / Makoto Tanikubo / Yo Tanaka<br />Shun Sasaguri / Takumi Yokoyama / Kazuki Yamaura
       </h3>
-      <Button className={style.button} countPage={props.countPage}  pageNumber={props.pageNumber} />
+      <Button className={`${style.button} ${props.pageNumber == 1 ? "" : style.buttonDown}`} countPage={props.countPage}  pageNumber={props.pageNumber} />
     </div>
   );
 };

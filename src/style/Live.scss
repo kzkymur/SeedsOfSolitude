@@ -3,7 +3,7 @@
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   transition: 1s;
   height: 3em;
   top: 3em;
@@ -12,20 +12,18 @@
 
 .cover {
   position: fixed;
-  z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-color: #bbb;
+  background-color: rgba(0,0,0,0);
 }
 
 .iframe {
   width: 100vw;
   height: 100vh;
-  display: none;
 }
 
 .title {
-  position: absolute;
+  position: fixed;
   transition: 1s;
   height: 2em;
   top: 3.5em;
@@ -33,7 +31,7 @@
 }
 
 .hamburger {
-  width: auto;
+  font-size: 1rem;
 }
 
 .menu {
@@ -45,4 +43,46 @@
 
 .menu-show {
   right: 0;
+}
+
+@media screen and (max-width: 959px) {
+  .logo {
+    transition: 0.5s;
+    height: 3rem;
+    top: 3rem;
+    left: 2rem;
+  }
+  .title {
+    transition: 0.5s;
+    top: 3.4rem;
+    height: 2rem;
+    left: 5.5rem;
+  }
+  .hamburger {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    transition: 0.5s;
+    height: 5vh;
+    top: 11em;
+    left: 7em;
+  }
+  .title {
+    transition: 0.5s;
+    top: 13.5em;
+    height: 5em;
+    left: 22em;
+  }
+  .hamburger {
+    font-size: 3.5vw;
+  }
+  .menu {
+    right: -45vw;
+  }
+  .menu-show {
+    right: 0;
+  }
 }
