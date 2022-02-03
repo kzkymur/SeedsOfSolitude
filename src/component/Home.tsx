@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from "react";
 import style from "@/style/Home.scss";
-import Introduction_1 from "./introduction_1";
-import Introduction_2 from "./introduction_2";
-import Intro_template from "./intro_template";
+import Introduction_1 from "./Introduction_1";
+import Introduction_2 from "./Introduction_2";
+import Intro_template from "./Intro_template";
 import Page4Png from "@/img/page4.png";
 import Page5Png from "@/img/page5.png";
 import Page6Png from "@/img/page6.png";

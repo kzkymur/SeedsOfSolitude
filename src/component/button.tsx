@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react";
 import style from "@/style/button.scss";
+import { useHistory } from 'react-router-dom'
 
 type Props = {
   className: string;
@@ -23,9 +24,10 @@ const Button: React.FC<Props> = (props) => {
 };
 
 const ButtonCircleSvg: React.FC<CircleProps> = (props) => {
+  const history = useHistory();
   return (
     <svg
-      onClick = {props.countPage}
+      onClick = {props.pageNumber == 6 ? () => history.push("/Live") : props.countPage}
       className={style.button}
       viewBox="0 0 87 88"
       fill="none"

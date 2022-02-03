@@ -1,0 +1,48 @@
+.wrapper {
+  font-size: 1vw;
+}
+
+.logo {
+  position: absolute;
+  transition: 1s;
+  height: 3em;
+  top: 3em;
+  left: 4em;
+}
+
+.cover {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbb;
+}
+
+.iframe {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.title {
+  position: absolute;
+  transition: 1s;
+  height: 2em;
+  top: 3.5em;
+  left: 7.5em;
+}
+
+.hamburger {
+  width: auto;
+}
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  right: -35vw;
+  top: 0;
+}
+
+.menu-show {
+  right: 0;
+}
