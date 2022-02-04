@@ -13,7 +13,7 @@ export default {
 
   output: {
     path: dist,
-    publicPath: "/SeedsOfLonelinessWeb/",
+    publicPath: "/SeedsOfSolitude/",
     filename: 'bundle.js',
   },
 
@@ -52,8 +52,8 @@ export default {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: '/SeedsOfLonelinessWeb/img/',
-              publicPath: path => '/SeedsOfLonelinessWeb/img/' + path.split('/').slice(-1)[0],
+              outputPath: '/SeedsOfSolitude/img/',
+              publicPath: path => '/SeedsOfSolitude/img/' + path.split('/').slice(-1)[0],
             },
           },
         ],
