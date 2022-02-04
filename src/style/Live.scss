@@ -3,6 +3,8 @@
 }
 
 .logo {
+  z-index: 3;
+  cursor: pointer;
   position: fixed;
   transition: 1s;
   height: 3em;

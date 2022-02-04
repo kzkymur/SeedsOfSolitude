@@ -19,12 +19,14 @@
   transition: 0.3s;
   border-left: 0em solid #000;
   padding-left: 1rem;
+  cursor: pointer;
   ~ .twitter {
     font-size: 0.8rem;
     text-decoration: none;
     border-color: #00acee;
     &:hover {
       border-left: 0.3em solid #00acee;
+      cursor: pointer;
     }
     &:link,
     &:visited {
@@ -38,6 +40,7 @@
 }
 
 .dont-touch{
+  cursor: unset;
   color: #aaa;
   &:hover{
     border: none;
