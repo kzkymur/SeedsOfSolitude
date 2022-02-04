@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.gif{
+    width: 18rem;
+    border-radius: 0.5em;
+    box-shadow: rgb(221, 221, 221) 5px 5px 5px;
+}
+
+.haname{
+    color: rgb(43, 43, 43);
+    font-family: yu-gothic-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+
+}
+
+.hanakotoba{
+    color: rgb(43, 43, 43);
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: -0.8em;
+}
