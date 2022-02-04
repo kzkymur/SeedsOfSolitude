@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "@/style/Statement.scss";
-import Button from "./button"
+import Button from "./button";
 import BGIMG from "@/img/bg.png"
 
 const Introduction_1: React.FC = () => {
