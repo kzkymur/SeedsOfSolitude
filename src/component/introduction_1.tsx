@@ -1,7 +1,7 @@
 import React from "react";
 import style from "@/style/introduction_1.scss";
-import Logo from "./Logo";
-import Button from "./Button";
+import Logo from "./logo";
+import Button from "./button";
 
 type styleProps = {
   className: string;
