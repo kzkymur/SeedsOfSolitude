@@ -2,6 +2,8 @@
   width: 100vw;
   min-height: 100vh;
   position: relative;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
 }
 
 .fixed-div{
@@ -34,7 +36,7 @@
   padding-top: 15vh;
   padding-bottom: 10vh;
   display: flex;
-  gap: 2em 1em;
+  gap: 2em 2em;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;

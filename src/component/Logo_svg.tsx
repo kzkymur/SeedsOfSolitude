@@ -1,6 +1,6 @@
 import React from "react";
 import style from "@/style/logo.scss";
-import LogoSvg from "@/img/logo.svg";
+import LogoSvg from "@/img/logo_stop.gif";
 import { useHistory } from 'react-router-dom'
 
 type Props = {

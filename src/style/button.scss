@@ -62,8 +62,12 @@
 }
 
 @media screen and (max-width: 959px) {
+  .button-name {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+  }
   .button-circle {
-    width: 100%;
+    width: 80%;
     transition: 0.3s;
     &:hover {
       fill: white;
