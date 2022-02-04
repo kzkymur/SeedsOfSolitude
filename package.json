@@ -55,5 +55,6 @@
     "typings-for-css-modules-loader": "^1.7.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "description": ""
+  "description": "",
+  "homepage": "https://kzkymur.github.io/SeedsOfSolitude"
 }
