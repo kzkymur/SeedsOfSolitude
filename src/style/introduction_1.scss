@@ -13,6 +13,8 @@
 .wrapper {
   font-size: 1vw;
   width: 100vw;
+  height: 95vh;
+  float: left;
   position: fixed;
 }
 
@@ -56,8 +58,8 @@
 
 .button {
   position: absolute;
-  left: 87vw;
-  top: 75vh;
+  right: 8em;
+  bottom: 4em;
   width: 5em;
 }
 
@@ -84,6 +86,7 @@
 .non-credit {
   animation: hide 1s linear 0s;
   animation-fill-mode: forwards;
+  transition: none;
 }
 
 .non-seminar-name {
