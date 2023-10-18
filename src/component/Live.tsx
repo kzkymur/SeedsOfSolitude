@@ -20,7 +20,8 @@ const Live: React.FC = () => {
       />
       <Menu className={`${style.menu} ${checked ? style.menuShow : ""}`} />
       <div className={style.livebg}>
-        <h1>生放送は終了しました。</h1>
+        <h1>生放送は終了しました</h1>
+        <a href="https://www.youtube.com/live/GVaLs79zT1k?si=4qKoLnzyUU8fYbb9">アーカイブはこちら</a>
       </div>
     </div>
   );
