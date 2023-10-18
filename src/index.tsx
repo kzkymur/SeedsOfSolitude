@@ -9,7 +9,7 @@ import Flowers from './component/Flowers';
 class App extends React.Component {
   render () {
     return (
-      <Router basename={"https://kzkymur.github.io/SeedsOfSolitude"}>
+      <Router basename={"/"}>
         <Switch>
           <Route exact path='/' component={Home}/> 
           <Route path='/live' component={Live}/> 
